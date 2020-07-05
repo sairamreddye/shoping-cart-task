@@ -10,9 +10,7 @@ import { registerLocaleData } from '@angular/common';
 export class ItemsStatelessComponent implements OnInit {
 
 @Input() items:any;
-id: any;
-  getTotal: any = [];
-  totalPrice: any;
+  id: any;
   UpdatedPrice: any=[];
   constructor(private Businesslogic:PriceQuantitylogicService) { }
 

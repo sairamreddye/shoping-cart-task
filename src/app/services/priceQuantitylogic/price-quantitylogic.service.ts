@@ -4,17 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PriceQuantitylogicService {
-  id: any;
   getTotal: any = [];
-  totalPrice: any;
-  UpdatedPrice: any = [];
   totalProductsQuantities: any = 0;
   totalPriceQuantities:any = 0;
   constructor() { }
 
   increase(id, items) {
     this.getTotal = [...items];
-    console.log(this.getTotal);
     this.getTotal.map((m) => {
       if (m.id === id) {
         const quantities = 1 + m.counter++;

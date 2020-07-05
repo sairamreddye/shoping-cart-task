@@ -26,6 +26,10 @@ export class ItemsStateComponent implements OnInit {
   }
   
   ngOnInit() {
+ 
+//this.logic is used for promise based external service call you can uncomment and checkit
+//data will get from external api now i am using local json file to host the app in github pages
+
   //   this.itemsData.getItems().pipe(
   //     map((res:any []) => this.items = res),
   //     catchError(err => {
@@ -42,6 +46,9 @@ export class ItemsStateComponent implements OnInit {
   //     err => console.log('HTTP Error', err),
   //     () => console.log('HTTP request completed.')
   // );
+
+  //ends-here
+  
   this.items = data;
   }
 
