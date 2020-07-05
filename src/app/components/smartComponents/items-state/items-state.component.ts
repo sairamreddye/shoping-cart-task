@@ -17,7 +17,10 @@ export class ItemsStateComponent implements OnInit {
   private _jsonURL = '../../../data/shoping.json';
   constructor(private itemsData:ItemsDataService,private http: HttpClient) {
     this.getJSON().subscribe(data => {
-      console.log(data);
+      console.log(data),
+      ((err) => {
+        console.log(err)
+      })
      });
    }
 
