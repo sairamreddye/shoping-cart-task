@@ -1,0 +1,53 @@
+<div id="wrapper">
+    <section id="main">
+      <div class="container"  *ngFor="let item of items">
+        <div class="product-block">
+          <div class="pro-Img">
+            <img src="{{item.ImageURL}}" alt="Images" />
+            <p>{{item.OfferText}}</p>
+          </div>
+          <div class="pro-cnt">
+            <ul>
+              <li>{{item.Brandname}}</li>
+              <li>{{item.Brandexplanation}}</li>
+              <li>{{item.Quantity}}</li>
+              <li>MRP: {{item.MRP}}</li>
+              <li>RS: {{item.RS}}</li>
+            </ul>
+            <div class="pro-crt">
+              <ul>
+                <li><a (click)='increase(item.id)'>Add Cart </a></li>
+                <li><a (click)='increase(item.id)'><span>+</span></a></li>
+                <li><span>{{item.counter}}</span></li>
+                <li><a (click)='decrease(item.id)'><span>-</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <hr>
+      </div>
+    </section>
+    <!-- /main -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer">
+          <ul>
+            <li>Qty {{totalCost()}}</li>
+            <li>Total {{totalQuantities()}} </li>
+          </ul>
+          <a (click)='alertShow()'>CheckOut</a>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- /footer -->
+  </div>
+  <!-- /container -->
+
+
+
+
+
+
+

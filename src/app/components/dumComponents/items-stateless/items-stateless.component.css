@@ -1,0 +1,433 @@
+
+
+
+
+@charset "utf-8";
+
+/* ==========================================================================
+   CSS Reset
+   ========================================================================== */
+/*
+* html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+* Richard Clark (http://richclarkdesign.com)
+* http://cssreset.com
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent
+}
+
+body {
+   line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block
+}
+
+nav ul {
+   list-style: none
+}
+
+blockquote,
+q {
+   quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: none
+}
+
+a {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent
+}
+
+ins {
+   background-color: #ff9;
+   color: #000;
+   text-decoration: none
+}
+
+mark {
+   background-color: #ff9;
+   color: #000;
+   font-style: italic;
+   font-weight: bold
+}
+
+del {
+   text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+   border-bottom: 1px dotted;
+   cursor: help
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0
+}
+
+hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #ccc;
+   margin: 1em 0;
+   padding: 0
+}
+
+input,
+select {
+   vertical-align: middle
+}
+
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   -o-box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Common CSS
+   ========================================================================== */
+body {
+   font: normal 14px/20px Arial, Helvetica, sans-serif;
+   color: #4b4b4b;
+   background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: normal;
+}
+
+a {
+   outline: none;
+   text-decoration: none;
+   color: #b41124;
+}
+
+a:hover,
+a:focus {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.container {
+   width: 960px;
+   margin: 0 auto;
+}
+
+#wrapper {
+   min-height: 100%;
+   position: relative;
+}
+
+/* ==========================================================================
+   Setting up the fonts
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+/* header{
+} */
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/* footer{
+} */
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+.product-block {
+   display: inline-flex;
+   width: 100%;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+.pro-cnt {
+   list-style: none;
+}
+
+.pro-cnt ul {
+   list-style: none;
+}
+
+.pro-cnt ul li {
+   color: #000;
+   font-size: 16px;
+   line-height: 1.4;
+   margin-bottom: 10px;
+   letter-spacing: .5px;
+   margin-bottom: 4px;
+}
+
+.pro-cnt ul li:first-child {
+   color: green;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.pro-cnt ul li:nth-child(n+5) {
+   color: #000;
+   font-weight: 600;
+}
+
+.pro-crt ul {
+   display: inline-flex;
+   align-items: center;
+}
+
+.pro-crt ul li:first-child {
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.pro-cnt ul span {
+   font-size: 20px;
+   line-height: 1.4;
+}
+
+.pro-crt ul li:first-child a {
+   font-size: 15px;
+   font-weight: 600;
+   border-radius: 9px;
+   text-transform: uppercase;
+   letter-spacing: 0;
+   font-weight: 600;
+   padding: 8px 15px;
+   margin: 0px;
+   display: inline-block;
+   text-decoration: none;
+   color: #000;
+   background: #51c351;
+}
+
+.pro-crt ul li a {
+   text-decoration: none;
+}
+
+.pro-crt ul li a,
+.pro-crt ul span {
+   color: #000;
+}
+
+.pro-crt ul li:nth-child(even) {
+   font-weight: 600;
+   margin: 0px 29px;
+}
+
+.pro-crt {
+   margin-top: 20px;
+}
+
+/* .pro-Img {
+   width: 100%;
+} */
+
+.pro-Img img {
+   width: 100%;
+}
+
+.footer {
+   display: inline-flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   background: #ec6dcb;
+   padding: 2px 20px;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+
+}
+
+.footer ul li {
+   list-style: none;
+   color: blue;
+   font-size: 16px;
+   line-height: 1.4;
+   text-transform: capitalize;
+}
+
+.footer a {
+   padding: 10px 20px;
+   background: #6d9430;
+   color: #000;
+   font-size: 16px;
+   text-transform: uppercase;
+   font-weight: 600;
+   text-decoration: none;
+}
+
+/********* css responsive ********/
+@media(max-width:1199px) {
+   .container {
+      width: 100%;
+      padding: 0px 10px
+   }
+}
+
+@media(max-width:979px) {}
+
+@media(max-width:767px) {
+   .product-block {
+      display: block;
+   }
+
+   .product-block {
+      width: 100%;
+   }
+
+   .pro-Img {
+      width: 100%;
+   }
+
+   .pro-Img img {
+      width: 100%;
+   }
+}
+
+
+/* #rectangle1 {
+   height: 50px;
+   width: 500px;
+   background-color: #eb4d4b;
+   position: absolute;
+}
+
+#rectangle2 {
+   height: 50px;
+   width: 500px;
+   background-color: #686de0;
+   position: fixed;
+   top: 100px;
+}
+
+.title {
+   color: #f0932b;
+}
+
+.parent_element {
+   color: white;
+   width: 260px;
+   height: 260px;
+} */
+
+/* body {
+   height: 3000px;
+   background: #1f2021;
+   color: #9a859b;
+} */
