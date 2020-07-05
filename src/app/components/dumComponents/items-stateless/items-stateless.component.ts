@@ -1,7 +1,6 @@
-import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input,Output, EventEmitter, Inject  } from '@angular/core';
 import { PriceQuantitylogicService } from '../../../services/priceQuantitylogic/price-quantitylogic.service';
-import { registerLocaleData } from '@angular/common';
-
+import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-items-stateless',
   templateUrl: './items-stateless.component.html',
@@ -12,7 +11,7 @@ export class ItemsStatelessComponent implements OnInit {
 @Input() items:any;
   id: any;
   UpdatedPrice: any=[];
-  constructor(private Businesslogic:PriceQuantitylogicService) { }
+  constructor(private Businesslogic:PriceQuantitylogicService, @Inject(DOCUMENT) private _document: Document) { }
 
   ngOnInit() {
   }
@@ -30,7 +29,8 @@ export class ItemsStatelessComponent implements OnInit {
     return this.Businesslogic.totalQuantities();
   }
   alertShow(){
-    return alert(`Your Total Price is ${this.totalCost()} and Your Transaction is successful .`);
+    alert(`Your Total Price is ${this.totalCost()} and Your Transaction is successful .`);
+    this._document.defaultView.location.reload();
   }
 }
 
